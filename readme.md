@@ -1,1 +1,1 @@
-automation-api-sample
+automation-api
