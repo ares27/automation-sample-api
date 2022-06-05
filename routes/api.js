@@ -50,11 +50,9 @@ router
     } catch (ex) {
       res.send(ex.message);
     }
+  })
+  .post("/webhook", (req, res) => {
+    res.send(`Ok`);
   });
-
-// // WhatsApp
-// router.post("/webhook", (req, res) => {
-//   res.send(`Ok`);
-// });
 
 module.exports = router;
