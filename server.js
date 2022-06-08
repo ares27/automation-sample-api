@@ -35,6 +35,7 @@ app.post("/webhook", (req, res) => {
 
 app.post("/facebook", function (req, res) {
   console.log("Facebook request body:", req.body);
+  console.log("entry: ", req.body.entry);
 
   // if (!req.isXHubValid()) {
   //   console.log(
@@ -46,7 +47,8 @@ app.post("/facebook", function (req, res) {
 
   // Process the Facebook updates here
   received_updates.unshift(req.body);
-  res.sendStatus(200);
+  // res.sendStatus(200);
+  res.send("ok");
 });
 
 app.listen(PORT, () => {
