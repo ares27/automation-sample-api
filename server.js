@@ -35,7 +35,7 @@ app.post("/webhook", (req, res) => {
 
 app.post("/facebook", function (req, res) {
   console.log("Facebook request body:", req.body);
-  console.log("entry: ", req.body.entry);
+  console.log("req: ", req);
 
   // if (!req.isXHubValid()) {
   //   console.log(
